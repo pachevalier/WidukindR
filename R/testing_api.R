@@ -14,14 +14,6 @@ select_data <- function(x) {
   fromJSON() %>% 
   select_data()
 
-get_providers_keys <- function(){
-  "providers/keys" %>% 
-    paste0(api, .) %>% 
-    fromJSON() %>% 
-    select_data()
-  }
-get_providers_keys()
-
 # Table of all providers
 providers <- "providers" %>% 
   paste0(api, .) %>% 
@@ -73,6 +65,16 @@ values <- "datasets/insee-act-trim-anc/values" %>%
   fromJSON() %>% 
   select_data()
 
+
+values <- "datasets/insee-cho-an-halo/values" %>% 
+  paste0(api, .) %>% 
+  fromJSON() %>% 
+  select_data() %>% 
+  select_values()
+
+
+
+
 # Get Dimensions
 "datasets/insee-act-trim-anc/dimensions" %>% 
   paste0(api, .) %>% 
@@ -109,35 +111,43 @@ series <- "datasets/insee-act-trim-anc/series" %>%
   fromJSON() %>% 
   select_data() %>% 
   str()
-
-
-
-insee_ipc_2015_ens <- fromJSON("http://widukind-api.cepremap.org/api/v1/json/dataset/insee-ipc-2015-ens")
-fromJSON("http://widukind-api.cepremap.org/api/v1/json/dataset/insee-ipc-2015-ens/values?champ-geo=fe")
-insee_ipc_2015_ens
-insee_ipc_2015_ens$data
-pop_evo$data
-
-australia <- fromJSON("http://widukind-api.cepremap.org/api/v1/json/series/bis-pp-ls-q-au")
-australia$data$values
-
-base_url <- "http://widukind-api.cepremap.org/api/v1/json/"
-
-serie1 <- "series/bis-pp-ls-q-au" %>% 
-  paste0(base_url, .) %>% 
-  fromJSON()
-serie1_data <- serie1$data$values
-
-year_quarter <- df$Period %>% 
-  as.yearqtr(., format = "%Y-Q%q") %>% 
-  as.Date() %>% 
-  quarter(. , with_year = TRUE)
-
-df %>% ggplot() + 
-  geom_line(
-    mapping = aes(x = year_quarter, y = Value)
-  ) + 
-  scale_x_yearqtr(name = "date", n = 10) + 
-  scale_y_continuous(name = "unemployment rate", 
-                     limits = c(5,12)) + 
-  theme_tufte()
+# 
+# library(ggthemes)
+# library(ggplot2)
+# library(dplyr)
+# library(zoo)
+# library(lubridate)
+# "bis-pp-ls-q-au" %>% 
+#   paste0(api, "series/", .) %>% 
+#   fromJSON() %>% 
+#   select_data() %>% 
+#   select_values() 
+# 
+# get_serie <- function(serie) {
+#     serie %>% 
+#       paste0(api, "series/", .) %>% 
+#       fromJSON() %>% 
+#       select_data() %>% 
+#       select_values() 
+#   }
+# get_serie(serie = "bis-pp-ls-q-au")
+# 
+# bis_pp_ls_q_au <- get_serie(serie = "bis-pp-ls-q-au") %>% 
+#   mutate(
+#     value = as.numeric(value), 
+#     year_quarter = period %>% 
+#                     as.yearqtr(., format = "%Y-Q%q") %>% 
+#                     as.Date() %>% 
+#                     quarter(. , with_year = TRUE)
+#   )
+# 
+# bis_pp_ls_q_au %>% str()
+# bis_pp_ls_q_au %>%  
+#   ggplot() + 
+#     geom_point(
+#       mapping = aes(x = year_quarter, y = value)
+#     ) + 
+#     scale_x_yearqtr(name = "date", n = 10) + 
+#     scale_y_continuous(name = "unemployment rate", 
+#                      limits = c(5,12)) + 
+#     theme_tufte()
