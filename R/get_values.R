@@ -7,6 +7,10 @@ test <- "datasets/insee-cho-an-halo/values?sexe=1&age=15" %>%
   fromJSON() %>% 
   select_data()
 
+test
+test %>% select_values()
+
+do.call()
 
 test <- "datasets/insee-cho-an-halo/values?sexe=1&age=15" %>% 
   paste0(api, .) %>% 
