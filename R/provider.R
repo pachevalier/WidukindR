@@ -8,10 +8,9 @@
 #' get_datasets(provider = "insee") 
 
 get_datasets <- function(provider) {
-  provider %>% 
-    paste0(api, "providers/", ., "/datasets") %>% 
-    fromJSON() %>% 
-    select_data()
+    fromJSON(
+      paste0(api, "providers/", provider, "/datasets")  
+    )[["data"]]
   }
 
 #' Get keys of a dataset

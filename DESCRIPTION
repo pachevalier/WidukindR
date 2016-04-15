@@ -5,13 +5,14 @@ Title: R interface to the Widukind API
 Description: R interface to the Widukind API.
 Author: Paul-Antoine Chevalier
 Maintainer: Paul-Antoine Chevalier <pachevalier@gmail.com>
-Depends:
+Depends: 
     R (>= 2.15.0)
-Imports:
+Imports: 
     jsonlite,
     magrittr
+Suggests: 
+    dplyr
 License: GPL-3
-Suggests:
-    testthat
 URL: https://github.com/pachevalier/WidukindR
 RoxygenNote: 5.0.1
+LazyData: false

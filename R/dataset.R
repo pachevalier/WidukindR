@@ -31,4 +31,3 @@ get_series <- function(dataset){
 }
 
 
-
