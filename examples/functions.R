@@ -1,21 +1,4 @@
-api <- "http://widukind-api.cepremap.org/api/v1/json/"
 
-select_data <- function(x) {
-  x[["data"]]
-  }
-
-select_values <- function(x) {
-  x[["values"]]
-  }
-
-get_providers_keys <- function() {
-  # get the list of all providers keys
-  "providers/keys" %>% 
-    paste0(api, .) %>% 
-    fromJSON() %>% 
-    select_data()
-  }
-get_providers_keys()
 
 get_providers_table <- function() {
   # get a table with all providers

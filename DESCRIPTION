@@ -1,0 +1,17 @@
+Package: WidukindR
+Version: 0.1
+Date: 2016-04-15
+Title: R interface to the Widukind API
+Description: R interface to the Widukind API.
+Author: Paul-Antoine Chevalier
+Maintainer: Paul-Antoine Chevalier <pachevalier@gmail.com>
+Depends:
+    R (>= 2.15.0)
+Imports:
+    jsonlite,
+    magrittr
+License: GPL-3
+Suggests:
+    testthat
+URL: https://github.com/pachevalier/WidukindR
+RoxygenNote: 5.0.1

@@ -4,10 +4,6 @@ library(magrittr)
 library(purrr)
 api <- "http://widukind-api.cepremap.org/api/v1/json/"
 
-select_data <- function(x) {
-  x[["data"]]
-  }
-
 # List of providers keys
 "providers/keys" %>% 
   paste0(api, .) %>% 
