@@ -1,4 +1,3 @@
-# http://widukind-api.cepremap.org/
 library(jsonlite)
 library(magrittr)
 library(purrr)

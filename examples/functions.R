@@ -1,13 +1,9 @@
 
 
-get_providers_table <- function() {
-  # get a table with all providers
-  "providers" %>% 
-    paste0(api, .) %>% 
-    fromJSON() %>% 
-    select_data()
-  }
-get_providers_table()
+select_values <- function(x) {
+  x[["values"]]
+}
+
 
 get_datasets <- function(provider) {
   # get all the datasets for one provider
