@@ -11,6 +11,24 @@ get_dimensions_keys("insee-cho-an-halo")
 dimensions <- get_dimensions("insee-cho-an-halo")
 dimensions$sexe
 
+
+http://widukind-api.cepremap.org/api/v1/json/datasets/insee-cho-an-halo/values?sexe=1&age=15
+test <- "datasets/insee-cho-an-halo/values?sexe=1" %>% 
+  paste0(api, .) %>% 
+  fromJSON() %>% 
+  select_data()
+
+%>% 
+  select_values()
+
+test %>% str()
+
+
+%>% 
+  str()
+
+http://widukind-api.cepremap.org/api/v1/json/datasets//values?sexe=1
+
 series <- get_series("insee-cho-an-halo")
 
 serie <- get_serie("insee-cho-an-halo-001739436") %>% 
