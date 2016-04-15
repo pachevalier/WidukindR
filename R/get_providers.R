@@ -9,7 +9,7 @@
 
 get_providers_keys <- function() {
   "providers/keys" %>% 
-    paste0(api, .) %>% 
+    paste0(widukind_api, .) %>% 
     fromJSON() %>% 
     select_data()
   }
@@ -25,7 +25,7 @@ get_providers_keys <- function() {
 
 get_providers_table <- function() {
   "providers" %>% 
-    paste0(api, .) %>% 
+    paste0(widukind_api, .) %>% 
     fromJSON() %>% 
     select_data()
   }

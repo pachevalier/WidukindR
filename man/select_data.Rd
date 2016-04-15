@@ -16,7 +16,7 @@ This function selects the data part of the output
 library(jsonlite)
 library(magrittr)
 "providers" \%>\% 
- paste0(api, .) \%>\% 
+ paste0(widukind_api, .) \%>\% 
  fromJSON() \%>\%
  select_data()
 }

@@ -9,7 +9,7 @@
 
 get_datasets <- function(provider) {
     fromJSON(
-      paste0(api, "providers/", provider, "/datasets")  
+      paste0(widukind_api, "providers/", provider, "/datasets")  
     )[["data"]]
   }
 
@@ -24,7 +24,7 @@ get_datasets <- function(provider) {
 
 get_datasets_keys <- function(provider) {
   provider %>% 
-    paste0(api, "providers/", ., "/datasets/keys") %>% 
+    paste0(widukind_api, "providers/", ., "/datasets/keys") %>% 
     fromJSON() %>% 
     select_data()
-}
+  }
