@@ -6,7 +6,8 @@
 #' @keywords providers
 #' @export
 #' @examples
-#' load("R/sysdata.rda")
+#' library(jsonlite)
+#' library(magrittr)
 #' "providers" %>% 
 #'  paste0(api, .) %>% 
 #'  fromJSON() %>%

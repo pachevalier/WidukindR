@@ -13,7 +13,8 @@ select_data(x)
 This function selects the data part of the output
 }
 \examples{
-load("R/sysdata.rda")
+library(jsonlite)
+library(magrittr)
 "providers" \%>\% 
  paste0(api, .) \%>\% 
  fromJSON() \%>\%
