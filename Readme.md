@@ -1,4 +1,6 @@
 
 ## WidukindR
 
-Testing the Widukind API
+R interface to the Widukind API
+
+* [Widukind website](http://widukind.cepremap.org/)

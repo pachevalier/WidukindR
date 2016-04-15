@@ -2,7 +2,7 @@
 #' Select data
 #'
 #' This function selects the data part of the output
-#' @param x
+#' @param x a list 
 #' @keywords providers
 #' @export
 #' @examples

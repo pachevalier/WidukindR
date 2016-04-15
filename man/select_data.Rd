@@ -6,6 +6,9 @@
 \usage{
 select_data(x)
 }
+\arguments{
+\item{x}{a list}
+}
 \description{
 This function selects the data part of the output
 }
