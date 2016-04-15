@@ -4,6 +4,8 @@
 #' @param no parameter
 #' @keywords providers
 #' @export
+#' @importFrom magrittr %>%
+#' @importFrom jsonlite fromJSON
 #' @examples
 #' get_providers_keys()
 
