@@ -1,0 +1,32 @@
+---
+title: "WidukindR"
+author: "Paul-Antoine Chevalier"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Unemployment rate
+
+The figure sizes have been customised so that you can easily put two images side-by-side. 
+
+```{r, fig.show='hold'}
+library(magrittr)
+library(zoo)
+library(ggplot2)
+library(WidukindR)
+df <- get_serie("insee-txcho-reg-001515842")
+df$year_quarter <- as.yearqtr(df$period, format = "%Y-Q%q") 
+df$value <- as.numeric(df$value)
+df %>% ggplot() + 
+  geom_line(
+    mapping = aes(x = year_quarter, y = value)
+  ) + 
+  scale_x_yearqtr(name = "Date", n = 10, format = "%Y-Q%q") + 
+  scale_y_continuous(name = "Taux de chômage") 
+
+```
+
