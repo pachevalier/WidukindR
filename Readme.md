@@ -25,8 +25,11 @@ Get the list
     > get_serie("insee-txcho-reg-001515842")
     > as.yearqtr("1982-Q1", format = "%Y-Q%q") %>% as.Date()
 
-## Todo 
+## Todo
 
 - get_values()
 - get_multiple_series() or get_mseries()
 
+## See also
+
+- [World Bank Development indicators for R](https://github.com/vincentarelbundock/WDI) by @vincentarelbundock
