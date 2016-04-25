@@ -1,7 +1,7 @@
 
 ## WidukindR
 
-R client for the @Widukind's API
+R client for the @Widukind API
 
 * [Widukind website](http://widukind.cepremap.org/)
 
