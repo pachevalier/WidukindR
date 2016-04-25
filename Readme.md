@@ -29,7 +29,9 @@ Get the list
 
 - get_values()
 - get_multiple_series() or get_mseries()
+- search()
 
 ## See also
 
 - [World Bank Development indicators for R](https://github.com/vincentarelbundock/WDI) by @vincentarelbundock
+- [wbstats](https://github.com/GIST-ORNL/wbstats) by @GIST-ORNL
