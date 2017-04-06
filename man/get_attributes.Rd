@@ -4,15 +4,15 @@
 \alias{get_attributes}
 \title{Get attributes}
 \usage{
-get_attributes(dataset)
+get_attributes(slug)
 }
 \arguments{
-\item{dataset}{the slug of the dataset}
+\item{slug}{the slug of the dataset}
 }
 \description{
 This function returns a list of attributes
 }
 \examples{
-get_attributes(dataset = "insee-act-trim-anc")
+get_attributes(slug = "insee-act-trim-anc")
 }
 \keyword{dataset}

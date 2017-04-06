@@ -1,34 +1,39 @@
 #' Get Providers Keys
 #'
 #' This function returns a vector with all providers keys
-#' @param no parameter
+#'
+#' @return a vector
+#'
 #' @keywords providers
 #' @export
-#' @importFrom magrittr %>%
-#' @importFrom jsonlite fromJSON
+#' 
 #' @examples
 #' get_providers_keys()
 
-get_providers_keys <- function() {
-  "providers/keys" %>% 
-    paste0(widukind_api, .) %>% 
-    fromJSON() %>% 
-    select_data()
+get_providers_keys <- function() { 
+    widukind_api <- "http://widukind-api.cepremap.org/api/v1/json/"
+    paste0(widukind_api, "providers/keys") %>% 
+    jsonlite::fromJSON() %>% 
+    magrittr::extract2("data")
   }
 
 #' Get Providers Table
 #'
 #' This function returns a data frame with data on providers
-#' @param no parameter
+#' 
+#' @return a tibble
+#' 
 #' @keywords providers
 #' @export
+#' 
 #' @examples
 #' get_providers_table()
 
 get_providers_table <- function() {
-  "providers" %>% 
-    paste0(widukind_api, .) %>% 
-    fromJSON() %>% 
-    select_data()
+  widukind_api <- "http://widukind-api.cepremap.org/api/v1/json/"
+  paste0(widukind_api, "providers") %>%
+    jsonlite::fromJSON() %>% 
+    magrittr::extract2("data") %>% 
+    tibble::as_tibble()
   }
 

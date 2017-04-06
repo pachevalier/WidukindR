@@ -4,7 +4,7 @@
 \alias{get_attributes_keys}
 \title{Get attributes keys}
 \usage{
-get_attributes_keys(dataset)
+get_attributes_keys(slug)
 }
 \arguments{
 \item{dataset}{the slug of the dataset}
@@ -13,6 +13,6 @@ get_attributes_keys(dataset)
 This function returns a vector of slug of attributes
 }
 \examples{
-get_attributes_keys(dataset = "insee-act-trim-anc")
+get_attributes_keys(slug = "insee-act-trim-anc")
 }
 \keyword{dataset}

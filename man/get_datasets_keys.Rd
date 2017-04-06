@@ -4,15 +4,15 @@
 \alias{get_datasets_keys}
 \title{Get keys of a dataset}
 \usage{
-get_datasets_keys(provider)
+get_datasets_keys(slug)
 }
 \arguments{
-\item{provider}{the slug of the provider}
+\item{slug}{the slug of the provider}
 }
 \description{
 This function returns a vector with all datasets keys for one provider
 }
 \examples{
-get_datasets_keys(provider = "insee") 
+get_datasets_keys(slug = "insee") 
 }
 \keyword{providers}

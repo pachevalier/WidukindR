@@ -4,7 +4,7 @@
 \alias{get_series}
 \title{Get series of a dataset}
 \usage{
-get_series(dataset)
+get_series(slug)
 }
 \arguments{
 \item{dataset}{the slug of the dataset}
@@ -13,6 +13,7 @@ get_series(dataset)
 This function returns a data frame with all series for a dataset
 }
 \examples{
-get_series(dataset = "insee-act-trim-anc")
+get_series(slug = "insee-act-trim-anc")
+
 }
 \keyword{dataset}

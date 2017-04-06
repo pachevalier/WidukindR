@@ -4,15 +4,15 @@
 \alias{get_datasets}
 \title{Get datasets for one provider}
 \usage{
-get_datasets(provider)
+get_datasets(slug)
 }
 \arguments{
-\item{provider}{the slug of the provider}
+\item{slug}{the slug of the provider}
 }
 \description{
 This function returns a dataframe with all datasets for one provider
 }
 \examples{
-get_datasets(provider = "insee") 
+get_datasets(slug = "insee") 
 }
 \keyword{providers}

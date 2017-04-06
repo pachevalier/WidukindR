@@ -6,8 +6,8 @@
 \usage{
 get_providers_keys()
 }
-\arguments{
-\item{no}{parameter}
+\value{
+a vector
 }
 \description{
 This function returns a vector with all providers keys

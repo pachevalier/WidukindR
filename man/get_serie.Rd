@@ -4,15 +4,15 @@
 \alias{get_serie}
 \title{Get a serie}
 \usage{
-get_serie(serie)
+get_serie(slug)
 }
 \arguments{
-\item{serie}{the slug of a serie}
+\item{slug}{the slug of a serie}
 }
 \description{
 This function returns the values of a serie
 }
 \examples{
-get_serie(serie = "bis-pp-ls-q-au")
+get_serie(slug = "bis-pp-ls-q-au")
 }
 \keyword{serie}

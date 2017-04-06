@@ -6,8 +6,8 @@
 \usage{
 get_providers_table()
 }
-\arguments{
-\item{no}{parameter}
+\value{
+a tibble
 }
 \description{
 This function returns a data frame with data on providers

@@ -4,15 +4,17 @@
 \alias{get_frequencies}
 \title{Get frequencies}
 \usage{
-get_frequencies(dataset)
+get_frequencies(slug)
 }
 \arguments{
-\item{dataset}{the slug of the dataset}
+\item{slug}{the slug of the dataset}
 }
 \description{
 This function returns a vector with all possible frequencies for a dataset
 }
 \examples{
-get_frequencies(dataset = "insee-act-trim-anc")
+
+get_frequencies(slug = "insee-act-trim-anc")
+
 }
 \keyword{dataset}

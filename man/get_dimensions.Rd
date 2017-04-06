@@ -4,10 +4,10 @@
 \alias{get_dimensions}
 \title{Get dimensions}
 \usage{
-get_dimensions(dataset)
+get_dimensions(slug)
 }
 \arguments{
-\item{dataset}{the slug of the dataset}
+\item{slug}{the slug of the dataset}
 }
 \description{
 This function returns a list of dimensions

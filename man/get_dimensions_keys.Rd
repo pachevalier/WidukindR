@@ -4,7 +4,7 @@
 \alias{get_dimensions_keys}
 \title{Get dimensions keys}
 \usage{
-get_dimensions_keys(dataset)
+get_dimensions_keys(slug)
 }
 \arguments{
 \item{dataset}{the slug of the dataset}
