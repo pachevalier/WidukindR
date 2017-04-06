@@ -16,4 +16,3 @@ This function returns the values of a serie
 get_serie(serie = "bis-pp-ls-q-au")
 }
 \keyword{serie}
-

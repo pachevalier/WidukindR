@@ -16,4 +16,3 @@ This function returns a list of attributes
 get_attributes(dataset = "insee-act-trim-anc")
 }
 \keyword{dataset}
-

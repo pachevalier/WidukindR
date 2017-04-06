@@ -16,4 +16,3 @@ This function returns a vector of slug of attributes
 get_attributes_keys(dataset = "insee-act-trim-anc")
 }
 \keyword{dataset}
-

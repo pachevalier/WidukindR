@@ -14,10 +14,11 @@ vignette: >
 The figure sizes have been customised so that you can easily put two images side-by-side. 
 
 ```{r, fig.show='hold'}
-library(magrittr)
-library(zoo)
-library(ggplot2)
-library(WidukindR)
+library("magrittr")
+library("zoo")
+library("ggplot2")
+library("WidukindR")
+
 df <- get_serie("insee-txcho-reg-001515842")
 df$year_quarter <- as.yearqtr(df$period, format = "%Y-Q%q") 
 df$value <- as.numeric(df$value)

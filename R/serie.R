@@ -1,8 +1,10 @@
 #' Get a serie
 #'
 #' This function returns the values of a serie
+#' 
 #' @param serie the slug of a serie
 #' @keywords serie
+#' 
 #' @export
 #' @examples
 #' get_serie(serie = "bis-pp-ls-q-au")

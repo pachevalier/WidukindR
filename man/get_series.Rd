@@ -16,4 +16,3 @@ This function returns a data frame with all series for a dataset
 get_series(dataset = "insee-act-trim-anc")
 }
 \keyword{dataset}
-

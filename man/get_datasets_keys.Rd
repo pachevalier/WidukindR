@@ -16,4 +16,3 @@ This function returns a vector with all datasets keys for one provider
 get_datasets_keys(provider = "insee") 
 }
 \keyword{providers}
-

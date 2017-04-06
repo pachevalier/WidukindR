@@ -16,4 +16,3 @@ This function returns a vector with all possible frequencies for a dataset
 get_frequencies(dataset = "insee-act-trim-anc")
 }
 \keyword{dataset}
-

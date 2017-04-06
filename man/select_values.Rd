@@ -21,4 +21,3 @@ library(magrittr)
  select_data() \%>\% 
  select_values() 
 }
-

@@ -21,4 +21,3 @@ library(magrittr)
  select_data()
 }
 \keyword{providers}
-

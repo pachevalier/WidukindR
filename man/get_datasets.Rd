@@ -16,4 +16,3 @@ This function returns a dataframe with all datasets for one provider
 get_datasets(provider = "insee") 
 }
 \keyword{providers}
-

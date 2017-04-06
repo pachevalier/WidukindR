@@ -16,4 +16,3 @@ This function returns a data frame with data on providers
 get_providers_table()
 }
 \keyword{providers}
-

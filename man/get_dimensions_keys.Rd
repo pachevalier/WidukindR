@@ -16,4 +16,3 @@ This function returns a list of dimensions
 get_dimensions_keys("insee-cho-an-halo")
 }
 \keyword{dataset}
-

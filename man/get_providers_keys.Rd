@@ -16,4 +16,3 @@ This function returns a vector with all providers keys
 get_providers_keys()
 }
 \keyword{providers}
-
